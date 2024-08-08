@@ -1,0 +1,124 @@
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+body{
+    background: url(./images/pattern-background-desktop.svg) no-repeat;
+    font-family: 'RedHatDisplay';
+    background-color:var(--Pale-blue);
+}
+p{
+    font-size:16px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    margin:2rem;
+    
+
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    max-height:650px;
+    max-width: 400px;
+    box-shadow: 2px 2px 2px rgba(128,128,128,0.4321);
+    border-radius: 20px;
+    background-color: white;
+      
+}
+.wrapper img{
+    border-radius: 20px 20px 0 0;
+
+}
+.textwrapper{
+    padding:0rem 2rem;
+    text-align: center;
+}
+.textwrapper p{
+    color:var(--Desaturated-blue);
+}
+.textwrapper h1{
+    color:var(--Dark-blue);
+    font-weight: 900;
+}
+.plancontainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(128,128,128,0.4321);
+    width:320px;
+    height:50px;
+    padding:10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color:var(--Very-pale-blue);
+    font-weight: 700;
+}
+.plancontainer a{
+    padding-right: 10px;
+}
+.plancontainer p>b{
+    line-height: 2rem;
+    color:var(--Dark-blue);
+    font-weight: 900;
+    
+}
+.plancontainer p{
+    margin-right:auto;
+    padding-left: 10px;
+    
+}
+
+.btn{
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    max-height: fit-content;
+    padding:1rem;
+}
+.btn a{
+    text-decoration: none;
+    color:var(--Very-pale-blue);
+    box-shadow: 1px 1px 1px rgba(128,128,128,0.4321);
+    font-weight: 700;
+
+}
+.cancel{
+    padding:2rem;
+}
+.cancel a{
+    text-decoration: none;
+    color:var(--Desaturated-blue);
+    font-weight:700;
+}
+.btn:has(a:hover){
+    opacity:0.8;
+}
+.plancontainer a:hover{
+    opacity:0.8;
+    text-decoration: none;
+}
+.cancel a:hover{
+    color:var(--Dark-blue);
+    font-weight: 900;
+}
+@media only screen and (max-width:600px) {
+    body{
+        background:url(./images/pattern-background-mobile.svg) no-repeat;
+        background-color:var(--Pale-blue);
+    }
+    
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
